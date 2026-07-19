@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div className="footer-actions">
           <a href="mailto:tejasnatekar10@gmail.com">Email me <span>↗</span></a>
           <a href="https://www.linkedin.com/in/tejasnatekar" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-          <a href="/tejasnatekar/Tejas-Natekar-CV.docx" download>Download CV <span>↓</span></a>
+          <a href="/Tejas-Natekar-CV.docx" download>Download CV <span>↓</span></a>
         </div>
       </div>
       <div className="shell footer-base">
