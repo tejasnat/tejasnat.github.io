@@ -299,19 +299,6 @@ button { font: inherit; }
 .result-grid p { margin: auto 0 0; font-size: 15px; line-height: 1.65; }
 .visual-note { margin: 24px 0 0; padding: 18px 20px; border: 1px dashed #9ba9af; color: var(--muted); font-size: 12px; line-height: 1.6; }
 
-.perspective-section { background: #fbfaf6; padding-top: 40px; }
-.perspective-heading { display: grid; grid-template-columns: .7fr 1.35fr .75fr; gap: 45px; align-items: start; margin-bottom: 42px; }
-.perspective-heading h2 { margin: 0; font-size: clamp(38px, 4.5vw, 58px); line-height: 1.05; letter-spacing: -.05em; font-weight: 550; }
-.perspective-heading p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
-.perspective-gallery { display: grid; grid-template-columns: .75fr 1.25fr; gap: 20px; }
-.perspective-gallery figure { position: relative; min-height: 610px; margin: 0; overflow: hidden; background: #dfe7e8; }
-.perspective-gallery img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .5s ease; }
-.perspective-city img { object-position: 50% 42%; }
-.perspective-rail img { object-position: 50% 50%; }
-.perspective-gallery figure:hover img { transform: scale(1.018); }
-.perspective-gallery figcaption { position: absolute; inset: auto 20px 20px; display: grid; gap: 6px; padding: 15px 17px; background: rgba(16,24,32,.86); color: #fff; backdrop-filter: blur(8px); }
-.perspective-gallery figcaption span { color: var(--cyan); font: 650 8px var(--font-geist-mono); letter-spacing: .13em; text-transform: uppercase; }
-.perspective-gallery figcaption strong { font-size: 13px; }
 
 @media (max-width: 900px) {
   .portfolio-hero .hero-layout { grid-template-columns: 1fr; gap: 50px; }
@@ -319,7 +306,6 @@ button { font: inherit; }
   .identity-strip { grid-template-columns: 1fr; }.identity-strip > div { border-left: 1px solid rgba(16,24,32,.16); border-bottom: 1px solid rgba(16,24,32,.16); }
   .portfolio-grid { grid-template-columns: 1fr; }.portfolio-card-1,.portfolio-card-4 { grid-column: auto; grid-template-columns: 1fr; }.portfolio-card-1 .portfolio-card-visual { min-height: 460px; }
   .method-layout { grid-template-columns: 1fr; gap: 55px; }.capability-orbit-layout { grid-template-columns: 1fr; }.skill-orbit-panel { min-height: 520px; }.evidence-grid { grid-template-columns: 1fr 1fr; }
-  .perspective-heading { grid-template-columns: 1fr; gap: 18px; }.perspective-gallery { grid-template-columns: 1fr 1fr; }.perspective-gallery figure { min-height: 490px; }
   .case-visual-stage { grid-template-columns: 1fr; }.case-stage-notes { grid-template-columns: repeat(3,1fr); grid-template-rows: none; border-left: 0; border-top: 1px solid var(--line); }.case-stage-notes > div { border-right: 1px solid var(--line); border-bottom: 0; }
   .case-body-v2 .case-layout { grid-template-columns: 1fr; gap: 45px; }.result-grid { grid-template-columns: 1fr; }.result-grid article { min-height: 180px; }
 }
@@ -329,7 +315,6 @@ button { font: inherit; }
   .hero-portrait,.hero-portrait img { min-height: 410px; }.hero-portrait figcaption { align-items: flex-start; flex-direction: column; gap: 5px; }
   .portfolio-card-visual,.portfolio-card-1 .portfolio-card-visual,.portfolio-card-4 .portfolio-card-visual { min-height: 300px; }.portfolio-card-copy { padding: 25px; }.portfolio-card-copy h3 { font-size: 29px; }
   .archive-link { align-items: stretch; flex-direction: column; }.skill-orbit-panel { min-height: 470px; padding: 32px 22px; }.skill-orbit { width: min(340px,88vw); }.evidence-grid { grid-template-columns: 1fr; }.evidence-grid article { min-height: 235px; }
-  .perspective-section { padding-top: 20px; }.perspective-gallery { grid-template-columns: 1fr; }.perspective-gallery figure { min-height: 500px; }.perspective-rail { min-height: 330px !important; }
   .case-title-block h1 { font-size: 48px; }.case-outcome { font-size: 18px; }.case-visual-stage .project-visual { min-height: 330px; }.case-stage-notes { grid-template-columns: 1fr; }.case-stage-notes > div { border-right: 0; border-bottom: 1px solid var(--line); }
   .contribution-card { padding: 26px; }.contribution-card > p { font-size: 19px; }.case-workflow article { grid-template-columns: 35px 18px 1fr; gap: 10px; }
 }
