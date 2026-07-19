@@ -24,27 +24,38 @@ export default function Home() {
     <main>
       <section className="hero dark-section portfolio-hero">
         <div className="hero-grid-overlay" />
-        <div className="shell hero-layout">
-          <div className="hero-copy">
-            <span className="eyebrow"><i /> Mechanical engineering · CFD · design</span>
-            <h1>Engineering physical systems through <em>design, simulation</em> and analysis.</h1>
-            <p>I’m Tejas Natekar, a Mechanical Engineering undergraduate working across thermal-fluid systems, computational modelling and mechanical design, with interests in aerospace and mobility.</p>
-            <div className="hero-actions">
-              <Link className="button button-primary" href="#selected-work">View selected work <span>↓</span></Link>
-              <a className="button button-ghost" href="/Tejas-Natekar-CV.docx" download>Download résumé <span>↓</span></a>
+        <div className="shell personal-hero">
+          <div className="hero-name-block">
+            <span className="eyebrow"><i /> Mechanical engineering portfolio</span>
+            <h1>Tejas Natekar</h1>
+            <div className="hero-keywords" aria-label="Areas of interest">
+              <span>Mechanical Design</span>
+              <span>CFD &amp; Numerical Modelling</span>
+              <span>Thermal-Fluid Systems</span>
+              <span>Aerospace &amp; Mobility</span>
+              <span>Aviation Enthusiast</span>
             </div>
           </div>
 
-          <figure className="hero-portrait">
-            <img src="/tejas-natekar-portrait.jpg" alt="Tejas Natekar at NCSPER 2025" />
-            <figcaption><span>Tejas Natekar</span><strong>Mechanical Engineering · 2027</strong></figcaption>
-          </figure>
-        </div>
+          <div className="hero-profile-grid">
+            <figure className="hero-portrait">
+              <img src="/tejas-natekar-portrait.jpg" alt="Tejas Natekar at NCSPER 2025" />
+              <figcaption><span>Tejas Natekar</span><strong>Mechanical Engineering · 2027</strong></figcaption>
+            </figure>
 
-        <div className="shell identity-strip">
-          <div><span>Current</span><strong>B.Tech Mechanical Engineering</strong></div>
-          <div><span>Focus</span><strong>CFD · thermal systems · mechanical design</strong></div>
-          <div><span>Based in</span><strong>Hyderabad, India</strong></div>
+            <div className="hero-summary">
+              <span className="section-kicker">About me</span>
+              <h2>Hi, I’m Tejas—a mechanical engineering student interested in how physical ideas become credible designs.</h2>
+              <p>I’m currently in the fourth year of my B.Tech in Mechanical Engineering at Mahindra University’s École Centrale School of Engineering. I’m drawn to problems where fluid flow, heat transfer, computation and mechanical design have to come together to produce something that can work beyond the screen.</p>
+              <p>My work spans CAD assemblies, CFD and thermal-fluid analysis, multiphysics modelling, numerical methods and machine learning. I have designed and analysed a Tesla turbine, developed an aerodynamic stall-classification and lift-prediction workflow, worked on AUV mechanical packaging, and studied precision aerospace manufacturing at AZAD Engineering.</p>
+              <p>Going forward, I’m looking for opportunities in mechanical design, CFD and aerospace engineering where analysis can guide a practical, buildable decision. Outside formal coursework, I follow aviation closely and enjoy learning through travel, engineering systems and hands-on experimentation.</p>
+              <div className="hero-actions">
+                <Link className="button button-primary" href="#selected-work">Explore my work <span>↓</span></Link>
+                <a className="button button-ghost" href="/Tejas-Natekar-CV.docx" download>Download résumé <span>↓</span></a>
+                <a className="text-link hero-contact" href="mailto:tejasnatekar10@gmail.com">Contact me ↗</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

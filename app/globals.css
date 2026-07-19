@@ -203,10 +203,18 @@ button { font: inherit; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
 
 /* Portfolio v2 — visual-first mechanical engineering case studies */
-.portfolio-hero { min-height: 790px; padding-top: 158px; }
-.portfolio-hero .hero-layout { grid-template-columns: 1.08fr .72fr; gap: 92px; }
-.portfolio-hero .hero-copy h1 { max-width: 760px; font-size: clamp(54px, 5.8vw, 84px); }
-.portfolio-hero .hero-copy > p { max-width: 650px; }
+.portfolio-hero { min-height: 0; padding: 150px 0 0; }
+.personal-hero { position: relative; z-index: 2; }
+.hero-name-block { padding-bottom: 48px; border-bottom: 1px solid rgba(16,24,32,.16); }
+.hero-name-block h1 { margin: 20px 0 28px; font-size: clamp(66px, 9vw, 122px); line-height: .88; letter-spacing: -.075em; font-weight: 540; }
+.hero-keywords { display: flex; flex-wrap: wrap; gap: 8px; }
+.hero-keywords span { padding: 9px 12px; border: 1px solid rgba(16,24,32,.2); background: rgba(255,255,255,.38); color: #465861; font: 650 9px/1 var(--font-geist-mono); letter-spacing: .07em; text-transform: uppercase; }
+.hero-profile-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 72px; padding: 58px 0 78px; align-items: stretch; }
+.hero-summary { align-self: center; }
+.hero-summary h2 { margin: 21px 0 25px; max-width: 700px; font-size: clamp(34px, 4vw, 52px); line-height: 1.08; letter-spacing: -.048em; font-weight: 550; }
+.hero-summary > p { max-width: 760px; margin: 0 0 17px; color: #53656e; font-size: 15px; line-height: 1.75; }
+.hero-summary .hero-actions { align-items: center; margin-top: 32px; }
+.hero-contact { margin: 0 0 0 8px; color: var(--ink); }
 .hero-portrait { position: relative; min-height: 520px; margin: 0; overflow: hidden; border: 1px solid rgba(16,24,32,.18); background: #f7f7f2; box-shadow: 22px 22px 0 rgba(8,127,140,.09); }
 .hero-portrait::before { content: "PORTRAIT / 2025"; position: absolute; z-index: 2; top: 18px; left: 18px; padding: 7px 9px; background: rgba(251,250,246,.84); color: #53656e; font: 650 8px var(--font-geist-mono); letter-spacing: .13em; }
 .hero-portrait img { width: 100%; height: 100%; min-height: 520px; display: block; object-fit: cover; object-position: 50% 42%; }
@@ -301,7 +309,7 @@ button { font: inherit; }
 
 
 @media (max-width: 900px) {
-  .portfolio-hero .hero-layout { grid-template-columns: 1fr; gap: 50px; }
+  .hero-profile-grid { grid-template-columns: 1fr; gap: 50px; }.hero-name-block h1 { font-size: clamp(64px,13vw,104px); }
   .hero-portrait { width: min(620px,100%); min-height: 560px; margin: 0 auto; }.hero-portrait img { min-height: 560px; }
   .identity-strip { grid-template-columns: 1fr; }.identity-strip > div { border-left: 1px solid rgba(16,24,32,.16); border-bottom: 1px solid rgba(16,24,32,.16); }
   .portfolio-grid { grid-template-columns: 1fr; }.portfolio-card-1,.portfolio-card-4 { grid-column: auto; grid-template-columns: 1fr; }.portfolio-card-1 .portfolio-card-visual { min-height: 460px; }
@@ -311,7 +319,7 @@ button { font: inherit; }
 }
 
 @media (max-width: 640px) {
-  .portfolio-hero { padding-top: 118px; }.portfolio-hero .hero-copy h1 { font-size: 48px; }.identity-strip { margin-top: 55px; }
+  .portfolio-hero { padding-top: 112px; }.hero-name-block { padding-bottom: 34px; }.hero-name-block h1 { margin-top: 17px; font-size: 58px; line-height: .94; }.hero-keywords span { font-size: 8px; }.hero-profile-grid { gap: 38px; padding: 38px 0 58px; }.hero-summary h2 { font-size: 34px; }.hero-summary > p { font-size: 14px; }.hero-contact { margin-left: 0; }
   .hero-portrait,.hero-portrait img { min-height: 410px; }.hero-portrait figcaption { align-items: flex-start; flex-direction: column; gap: 5px; }
   .portfolio-card-visual,.portfolio-card-1 .portfolio-card-visual,.portfolio-card-4 .portfolio-card-visual { min-height: 300px; }.portfolio-card-copy { padding: 25px; }.portfolio-card-copy h3 { font-size: 29px; }
   .archive-link { align-items: stretch; flex-direction: column; }.skill-orbit-panel { min-height: 470px; padding: 32px 22px; }.skill-orbit { width: min(340px,88vw); }.evidence-grid { grid-template-columns: 1fr; }.evidence-grid article { min-height: 235px; }
