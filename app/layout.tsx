@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: "/tejasnatekar/favicon.svg",
-    shortcut: "/tejasnatekar/favicon.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
   },
 };
 
