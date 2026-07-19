@@ -15,7 +15,7 @@ export default function Home() {
             <p>I’m Tejas Natekar, a Mechanical Engineering undergraduate exploring thermal-fluid systems, simulation and mechanical design for aerospace and mobility applications.</p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/projects">Explore projects <span>↗</span></Link>
-              <a className="button button-ghost" href="/tejasnatekar/Tejas-Natekar-CV.docx" download>Download CV <span>↓</span></a>
+              <a className="button button-ghost" href="/Tejas-Natekar-CV.docx" download>Download CV <span>↓</span></a>
             </div>
           </div>
           <div className="hero-instrument" aria-label="Engineering disciplines represented as an abstract system map">
