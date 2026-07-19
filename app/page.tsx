@@ -1,24 +1,40 @@
-import { projects } from "@/lib/projects";
-import { ProjectVisual } from "@/components/ProjectVisual";
 import Link from "next/link";
+import { ProjectVisual } from "@/components/ProjectVisual";
+import { projects } from "@/lib/projects";
+
+const featuredSlugs = [
+  "tesla-turbine",
+  "aerodynamic-ml-model",
+  "joule-heating-multiphysics",
+  "autonomous-underwater-vehicle",
+];
+
+const evidence: Record<string, string[]> = {
+  "tesla-turbine": ["12-disk rotor", "2 mm baseline spacing", "CAD + CFD review"],
+  "aerodynamic-ml-model": ["3 Reynolds regimes", "Stall classification", "Lift prediction"],
+  "joule-heating-multiphysics": ["Coupled physics", "Boundary sensitivity", "Physical validation"],
+  "autonomous-underwater-vehicle": ["Mechanical packaging", "Subsystem interfaces", "Team integration"],
+};
 
 export default function Home() {
-  const featured = projects.slice(0, 4);
+  const featured = featuredSlugs.map((slug) => projects.find((project) => project.slug === slug)!);
+
   return (
     <main>
-      <section className="hero dark-section">
+      <section className="hero dark-section portfolio-hero">
         <div className="hero-grid-overlay" />
         <div className="shell hero-layout">
           <div className="hero-copy">
-            <span className="eyebrow"><i /> Mechanical engineering · computational analysis</span>
-            <h1>Designing where <em>physics, computation</em> and manufacturability meet.</h1>
-            <p>I’m Tejas Natekar, a Mechanical Engineering undergraduate exploring thermal-fluid systems, simulation and mechanical design for aerospace and mobility applications.</p>
+            <span className="eyebrow"><i /> Mechanical engineering · CFD · design</span>
+            <h1>Engineering physical systems through <em>design, simulation</em> and analysis.</h1>
+            <p>I’m Tejas Natekar, a Mechanical Engineering undergraduate working across thermal-fluid systems, computational modelling and mechanical design, with interests in aerospace and mobility.</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/projects">Explore projects <span>↗</span></Link>
-              <a className="button button-ghost" href="/Tejas-Natekar-CV.docx" download>Download CV <span>↓</span></a>
+              <Link className="button button-primary" href="#selected-work">View selected work <span>↓</span></Link>
+              <a className="button button-ghost" href="/Tejas-Natekar-CV.docx" download>Download résumé <span>↓</span></a>
             </div>
           </div>
-          <div className="hero-instrument" aria-label="Engineering disciplines represented as an abstract system map">
+
+          <div className="hero-instrument" aria-label="Animated map of Tejas Natekar's core engineering disciplines">
             <div className="orbit orbit-one"><span>CFD</span></div>
             <div className="orbit orbit-two"><span>FEM</span></div>
             <div className="orbit orbit-three"><span>CAD</span></div>
@@ -29,72 +45,79 @@ export default function Home() {
             <span className="instrument-label bottom">DESIGN — VALIDATE — ITERATE</span>
           </div>
         </div>
-        <div className="shell hero-stats">
-          <div><strong>08</strong><span>Engineering case studies</span></div>
-          <div><strong>03</strong><span>Core tracks: design, simulation, research</span></div>
-          <div><strong>2027</strong><span>B.Tech Mechanical Engineering</span></div>
+
+        <div className="shell identity-strip">
+          <div><span>Current</span><strong>B.Tech Mechanical Engineering</strong></div>
+          <div><span>Focus</span><strong>CFD · thermal systems · mechanical design</strong></div>
+          <div><span>Based in</span><strong>Hyderabad, India</strong></div>
         </div>
       </section>
 
-      <section className="section featured-section">
+      <section className="section selected-work" id="selected-work">
         <div className="shell">
-          <div className="section-heading split-heading">
-            <div><span className="section-kicker">Selected work</span><h2>Projects built around real engineering questions.</h2></div>
-            <p>Each case study shows the problem, method, constraints and what changed after the first answer was not good enough.</p>
+          <div className="section-heading split-heading portfolio-heading">
+            <div><span className="section-kicker">Selected engineering work</span><h2>Four projects. Four different ways of answering a physical question.</h2></div>
+            <p>Each case study identifies the objective, my contribution, the technical approach, the evidence and what I would improve next.</p>
           </div>
-          <div className="featured-grid">
+
+          <div className="portfolio-grid">
             {featured.map((project, index) => (
-              <Link className={`featured-card ${index === 0 ? "featured-wide" : ""}`} href={`/projects/${project.slug}`} key={project.slug}>
-                <ProjectVisual type={project.visual} label={project.shortTitle} />
-                <div className="featured-card-copy">
-                  <div className="project-meta"><span>{project.number} · {project.category}</span><span>{project.date}</span></div>
-                  <h3>{project.shortTitle}</h3>
+              <Link className={`portfolio-card portfolio-card-${index + 1}`} href={`/projects/${project.slug}`} key={project.slug}>
+                <div className="portfolio-card-visual">
+                  <ProjectVisual type={project.visual} label={project.shortTitle} />
+                  <span className="figure-label">Fig. 0{index + 1} · {project.category}</span>
+                </div>
+                <div className="portfolio-card-copy">
+                  <div className="project-meta"><span>{project.number} · {project.date}</span><span>Case study ↗</span></div>
+                  <h3>{project.title}</h3>
                   <p>{project.summary}</p>
-                  <span className="text-link">View case study ↗</span>
+                  <ul>{evidence[project.slug].map((item) => <li key={item}>{item}</li>)}</ul>
                 </div>
               </Link>
             ))}
           </div>
-          <div className="center-action"><Link className="button button-outline" href="/projects">View all eight projects <span>↗</span></Link></div>
+
+          <div className="archive-link"><span>More numerical, thermal and research work is available in the complete project archive.</span><Link className="button button-outline" href="/projects">View all projects <span>↗</span></Link></div>
         </div>
       </section>
 
-      <section className="section process-section">
-        <div className="shell process-layout">
-          <div className="section-heading">
-            <span className="section-kicker light">Engineering approach</span>
-            <h2>Model the system.<br />Interrogate the result.<br /><em>Improve the design.</em></h2>
+      <section className="section method-section">
+        <div className="shell method-layout">
+          <div className="method-intro">
+            <span className="section-kicker">How I work</span>
+            <h2>Make the assumptions visible. Then make the result earn trust.</h2>
+            <p>My projects follow a common engineering loop, whether the tool is CAD, CFD, finite differences or machine learning.</p>
           </div>
-          <div className="process-list">
-            <article><span>01</span><div><h3>Frame the physics</h3><p>Define the system, assumptions, loads, boundaries and the quantity that actually matters.</p></div></article>
-            <article><span>02</span><div><h3>Build and simulate</h3><p>Translate the problem into CAD, analytical reasoning or a numerical model with traceable choices.</p></div></article>
-            <article><span>03</span><div><h3>Challenge the output</h3><p>Look for sensitivity, numerical artefacts, poor constraints and practical failure points.</p></div></article>
-            <article><span>04</span><div><h3>Carry the learning forward</h3><p>Use what went wrong to make the next geometry, model or engineering decision more credible.</p></div></article>
-          </div>
+          <ol className="method-steps">
+            <li><span>01</span><div><strong>Frame</strong><p>Define the system, objective, constraints and measurable outputs.</p></div></li>
+            <li><span>02</span><div><strong>Model</strong><p>Translate the physics into geometry, equations and traceable assumptions.</p></div></li>
+            <li><span>03</span><div><strong>Interrogate</strong><p>Check sensitivity, numerical behaviour and physical consistency.</p></div></li>
+            <li><span>04</span><div><strong>Iterate</strong><p>Carry limitations and evidence into the next design decision.</p></div></li>
+          </ol>
         </div>
       </section>
 
-      <section className="section experience-preview">
+      <section className="section experience-preview professional-experience">
         <div className="shell experience-card">
           <div className="experience-marker"><span>INDUSTRIAL<br />EXPOSURE</span><strong>AZAD</strong><small>HYDERABAD · 2025</small></div>
           <div className="experience-copy">
-            <span className="section-kicker">Aerospace manufacturing</span>
-            <h2>From turbine-blade geometry to the discipline of making it repeatedly.</h2>
-            <p>At AZAD Engineering, I followed the manufacturing and quality chain behind precision aerospace components—from multi-axis machining and tooling to CMM inspection, tolerance verification and process control.</p>
-            <Link className="text-link dark-link" href="/experience">Explore the experience ↗</Link>
+            <span className="section-kicker">Precision aerospace manufacturing</span>
+            <h2>Seeing how complex airfoil geometry becomes a repeatable component.</h2>
+            <p>I followed the manufacturing and quality chain behind precision aerospace components—from multi-axis machining and tooling to CMM inspection, tolerance verification and process control.</p>
+            <Link className="text-link dark-link" href="/experience">View industrial experience ↗</Link>
           </div>
-          <div className="experience-tags"><span>5-axis CNC</span><span>CMM inspection</span><span>Tolerance verification</span><span>Quality systems</span></div>
+          <div className="experience-tags"><span>5-axis machining</span><span>Airfoil geometry</span><span>CMM inspection</span><span>Quality systems</span></div>
         </div>
       </section>
 
-      <section className="section toolkit-section">
+      <section className="section capability-section">
         <div className="shell">
-          <div className="section-heading split-heading"><div><span className="section-kicker">Technical toolkit</span><h2>Tools are useful. Engineering judgement is the multiplier.</h2></div><p>Working exposure across CAD, numerical modelling, analysis and programming.</p></div>
-          <div className="tool-grid">
-            <article><span>01</span><h3>Design</h3><p>SolidWorks · Inventor · AutoCAD</p></article>
-            <article><span>02</span><h3>Analysis</h3><p>ANSYS · CFD · FEM · Multiphysics</p></article>
-            <article><span>03</span><h3>Computation</h3><p>MATLAB · Python · C/C++</p></article>
-            <article><span>04</span><h3>Manufacturing</h3><p>CNC coding · Metrology · Process observation</p></article>
+          <div className="section-heading split-heading portfolio-heading"><div><span className="section-kicker">Technical capability</span><h2>Skills connected to work—not a list of software logos.</h2></div><p>The strongest evidence for each capability is linked through the projects above.</p></div>
+          <div className="evidence-grid">
+            <article><span>01 · Design</span><h3>Mechanical systems and assemblies</h3><p>SolidWorks · Inventor · packaging · design for assembly</p></article>
+            <article><span>02 · Simulation</span><h3>CFD, thermal and multiphysics analysis</h3><p>ANSYS · fluid flow · heat transfer · coupled physics</p></article>
+            <article><span>03 · Computation</span><h3>Numerical models and engineering data</h3><p>MATLAB · Python · finite differences · machine learning</p></article>
+            <article><span>04 · Manufacturing</span><h3>Process-aware engineering judgement</h3><p>CNC exposure · metrology · CMM · tolerance awareness</p></article>
           </div>
         </div>
       </section>

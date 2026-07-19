@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const links = [
-  { href: "/projects", label: "Projects" },
+  { href: "/projects", label: "Work" },
   { href: "/experience", label: "Experience" },
   { href: "/about", label: "About" },
 ];
@@ -21,7 +21,8 @@ export function SiteHeader() {
           {links.map((link) => (
             <Link key={link.href} href={link.href}>{link.label}</Link>
           ))}
-          <a className="nav-cta" href="mailto:tejasnatekar10@gmail.com">Let’s talk <span>↗</span></a>
+          <a href="/Tejas-Natekar-CV.docx" download>Résumé</a>
+          <a className="nav-cta" href="mailto:tejasnatekar10@gmail.com">Contact <span>↗</span></a>
         </nav>
         <details className="mobile-menu">
           <summary aria-label="Open navigation">Menu</summary>
@@ -29,7 +30,8 @@ export function SiteHeader() {
             {links.map((link) => (
               <Link key={link.href} href={link.href}>{link.label}</Link>
             ))}
-            <a href="mailto:tejasnatekar10@gmail.com">Let’s talk ↗</a>
+            <a href="/Tejas-Natekar-CV.docx" download>Résumé ↓</a>
+            <a href="mailto:tejasnatekar10@gmail.com">Contact ↗</a>
           </nav>
         </details>
       </div>
