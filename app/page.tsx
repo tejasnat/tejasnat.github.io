@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ProjectVisual } from "@/components/ProjectVisual";
+import { EngineeringOrbit } from "@/components/EngineeringOrbit";
 import { projects } from "@/lib/projects";
 
 const featuredSlugs = [
@@ -34,16 +35,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hero-instrument" aria-label="Animated map of Tejas Natekar's core engineering disciplines">
-            <div className="orbit orbit-one"><span>CFD</span></div>
-            <div className="orbit orbit-two"><span>FEM</span></div>
-            <div className="orbit orbit-three"><span>CAD</span></div>
-            <div className="instrument-core"><strong>TN</strong><small>ME · 27</small></div>
-            <div className="instrument-axis axis-x" />
-            <div className="instrument-axis axis-y" />
-            <span className="instrument-label top">THERMAL — FLUID</span>
-            <span className="instrument-label bottom">DESIGN — VALIDATE — ITERATE</span>
-          </div>
+          <figure className="hero-portrait">
+            <img src="/tejas-natekar-portrait.jpg" alt="Tejas Natekar at NCSPER 2025" />
+            <figcaption><span>Tejas Natekar</span><strong>Mechanical Engineering · 2027</strong></figcaption>
+          </figure>
         </div>
 
         <div className="shell identity-strip">
@@ -113,11 +108,14 @@ export default function Home() {
       <section className="section capability-section">
         <div className="shell">
           <div className="section-heading split-heading portfolio-heading"><div><span className="section-kicker">Technical capability</span><h2>Skills connected to work—not a list of software logos.</h2></div><p>The strongest evidence for each capability is linked through the projects above.</p></div>
-          <div className="evidence-grid">
-            <article><span>01 · Design</span><h3>Mechanical systems and assemblies</h3><p>SolidWorks · Inventor · packaging · design for assembly</p></article>
-            <article><span>02 · Simulation</span><h3>CFD, thermal and multiphysics analysis</h3><p>ANSYS · fluid flow · heat transfer · coupled physics</p></article>
-            <article><span>03 · Computation</span><h3>Numerical models and engineering data</h3><p>MATLAB · Python · finite differences · machine learning</p></article>
-            <article><span>04 · Manufacturing</span><h3>Process-aware engineering judgement</h3><p>CNC exposure · metrology · CMM · tolerance awareness</p></article>
+          <div className="capability-orbit-layout">
+            <div className="skill-orbit-panel"><EngineeringOrbit /><p>Design, computation and physical validation are not separate tracks in my work—they inform the same engineering decision.</p></div>
+            <div className="evidence-grid">
+              <article><span>01 · Design</span><h3>Mechanical systems and assemblies</h3><p>SolidWorks · Inventor · packaging · design for assembly</p></article>
+              <article><span>02 · Simulation</span><h3>CFD, thermal and multiphysics analysis</h3><p>ANSYS · fluid flow · heat transfer · coupled physics</p></article>
+              <article><span>03 · Computation</span><h3>Numerical models and engineering data</h3><p>MATLAB · Python · finite differences · machine learning</p></article>
+              <article><span>04 · Manufacturing</span><h3>Process-aware engineering judgement</h3><p>CNC exposure · metrology · CMM · tolerance awareness</p></article>
+            </div>
           </div>
         </div>
       </section>

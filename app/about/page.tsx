@@ -27,6 +27,14 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="section perspective-section">
+        <div className="shell perspective-heading"><span className="section-kicker">Beyond the classroom</span><h2>Curiosity about mobility extends beyond the model.</h2><p>Travel gives me another way to observe how engineering decisions shape everyday movement, infrastructure and public experience.</p></div>
+        <div className="shell perspective-gallery">
+          <figure className="perspective-city"><img src="/tejas-japan-city.jpg" alt="Tejas Natekar in a busy street in Japan" /><figcaption><span>Observation</span><strong>Systems become real at street level.</strong></figcaption></figure>
+          <figure className="perspective-rail"><img src="/tejas-shinkansen.jpg" alt="Tejas Natekar beside Shinkansen trains in Japan" /><figcaption><span>Mobility</span><strong>Engineering at network scale.</strong></figcaption></figure>
+        </div>
+      </section>
+
       <section className="section education-section">
         <div className="shell education-grid">
           <div className="education-main"><span className="section-kicker light">Education</span><span className="education-date">2023 — 2027</span><h2>Bachelor of Technology<br />Mechanical Engineering</h2><p>Mahindra University · École Centrale School of Engineering</p></div>
