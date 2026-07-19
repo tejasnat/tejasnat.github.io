@@ -1,3 +1,5 @@
 # Tejas Natekar — Engineering Portfolio
 
-Source for my mechanical engineering portfolio, deployed with GitHub Pages.
+Mechanical engineering portfolio built with Next.js and statically exported for GitHub Pages.
+
+The site deploys automatically from `main` through GitHub Actions.
