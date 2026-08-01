@@ -46,7 +46,7 @@ export default function Home() {
             <div className="hero-summary">
               <span className="section-kicker">About me</span>
               <h2>Hi, I’m Tejas—a mechanical engineering student interested in how physical ideas become credible designs.</h2>
-              <p>I’m currently in the fourth year of my B.Tech in Mechanical Engineering at Mahindra University’s École Centrale School of Engineering. I’m drawn to problems where fluid flow, heat transfer, computation and mechanical design have to come together to produce something that can work beyond the screen.</p>
+              <p>I’m currently in the fourth year of my B.Tech in Mechanical Engineering at Mahindra University’s École Centrale School of Engineering. I’m most interested in engineering problems that bring together fluid flow, heat transfer, computation, and mechanical design to create solutions that work not only in simulation, but in the real world.</p>
               <p>My work spans CAD assemblies, CFD and thermal-fluid analysis, multiphysics modelling, numerical methods and machine learning. I have designed and analysed a Tesla turbine, developed an aerodynamic stall-classification and lift-prediction workflow, worked on AUV mechanical packaging, and studied precision aerospace manufacturing at AZAD Engineering.</p>
               <p>Going forward, I’m looking for opportunities in mechanical design, CFD and aerospace engineering where analysis can guide a practical, buildable decision. Outside formal coursework, I follow aviation closely and enjoy learning through travel, engineering systems and hands-on experimentation.</p>
               <div className="hero-actions">
