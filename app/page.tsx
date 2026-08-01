@@ -32,8 +32,8 @@ export default function Home() {
               <span>Mechanical Design</span>
               <span>CFD &amp; Numerical Modelling</span>
               <span>Thermal-Fluid Systems</span>
-              <span>Aerospace &amp; Mobility</span>
-              <span>Aviation Enthusiast</span>
+              <span>Multiphysics</span>
+              <span>Aerospace &amp; Scientific Engineering</span>
             </div>
           </div>
 
@@ -45,11 +45,11 @@ export default function Home() {
 
             <div className="hero-summary">
               <span className="section-kicker">About me</span>
-              <h2>Hi, I’m Tejas—a mechanical engineering student interested in how physical ideas become credible designs.</h2>
-              <p>I’m currently in the fourth year of my B.Tech in Mechanical Engineering at Mahindra University’s École Centrale School of Engineering. I’m most interested in engineering problems that bring together fluid flow, heat transfer, computation, and mechanical design to create solutions that work not only in simulation, but in the real world.</p>
-              <p>My work spans CAD assemblies, CFD and thermal-fluid analysis, multiphysics modelling, numerical methods and machine learning. I have designed and analysed a Tesla turbine, developed an aerodynamic stall-classification and lift-prediction workflow, and worked on AUV mechanical packaging.</p>
-              <p>My experience at AZAD Engineering provided valuable exposure to the manufacturing and inspection of precision aerospace components, including multi-axis CNC machining, airfoil geometry inspection, CMM measurement, and quality-control processes.</p>
-              <p>Going forward, I’m looking for opportunities in mechanical design, CFD and aerospace engineering where analysis can guide a practical, buildable decision. Outside formal coursework, I follow aviation closely and enjoy learning through travel, engineering systems and hands-on experimentation.</p>
+              <h2>Hi, I’m Tejas—a mechanical engineering student who enjoys understanding, designing and improving physical systems.</h2>
+              <p>I’m currently in the fourth year of my B.Tech in Mechanical Engineering at Mahindra University’s École Centrale School of Engineering. My interests lie in mechanical design, fluid flow, heat transfer, numerical simulation and multiphysics. I enjoy translating engineering theory into models, designs and decisions that can be tested against physical behaviour.</p>
+              <p>My work spans CAD assemblies, CFD and thermal-fluid analysis, multiphysics modelling, numerical methods and machine learning. I have designed and analysed a Tesla turbine, developed an aerodynamic stall-classification and lift-prediction workflow, and contributed to the mechanical design and subsystem packaging of an autonomous underwater vehicle.</p>
+              <p>My experience at AZAD Engineering provided valuable exposure to the manufacturing and inspection of precision aerospace components, including multi-axis CNC machining, airfoil geometry inspection, CMM measurement and quality-control processes.</p>
+              <p>I’m looking for opportunities to contribute to multidisciplinary technical projects, learn from experienced engineers and researchers, and develop practical solutions through careful analysis, collaboration and iteration. I’m particularly interested in environments where mechanical engineering supports advanced scientific, aerospace, energy or large-scale technical systems. Outside formal coursework, I follow aviation closely and enjoy learning through hands-on experimentation.</p>
               <div className="hero-actions">
                 <Link className="button button-primary" href="#selected-work">Explore my work <span>↓</span></Link>
                 <a className="button button-ghost" href="/Tejas-Natekar-CV.docx" download>Download résumé <span>↓</span></a>
@@ -92,8 +92,8 @@ export default function Home() {
         <div className="shell method-layout">
           <div className="method-intro">
             <span className="section-kicker">How I work</span>
-            <h2>Make the assumptions visible. Then make the result earn trust.</h2>
-            <p>My projects follow a common engineering loop, whether the tool is CAD, CFD, finite differences or machine learning.</p>
+            <h2>Define the physics. Question the result. Improve the design.</h2>
+            <p>Across CAD, CFD, finite differences and machine learning, I try to work methodically and make my assumptions, checks and limitations clear.</p>
           </div>
           <ol className="method-steps">
             <li><span>01</span><div><strong>Frame</strong><p>Define the system, objective, constraints and measurable outputs.</p></div></li>
@@ -121,7 +121,7 @@ export default function Home() {
         <div className="shell">
           <div className="section-heading split-heading portfolio-heading"><div><span className="section-kicker">Technical capability</span><h2>Skills connected to work—not a list of software logos.</h2></div><p>The strongest evidence for each capability is linked through the projects above.</p></div>
           <div className="capability-orbit-layout">
-            <div className="skill-orbit-panel"><EngineeringOrbit /><p>Design, computation and physical validation are not separate tracks in my work—they inform the same engineering decision.</p></div>
+            <div className="skill-orbit-panel"><EngineeringOrbit /><p>I use design, computation and physical reasoning together to understand a system and make better engineering decisions.</p></div>
             <div className="evidence-grid">
               <article><span>01 · Design</span><h3>Mechanical systems and assemblies</h3><p>SolidWorks · Inventor · packaging · design for assembly</p></article>
               <article><span>02 · Simulation</span><h3>CFD, thermal and multiphysics analysis</h3><p>ANSYS · fluid flow · heat transfer · coupled physics</p></article>
