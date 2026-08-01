@@ -1,25 +1,7 @@
 import Link from "next/link";
-import { ProjectVisual } from "@/components/ProjectVisual";
 import { EngineeringOrbit } from "@/components/EngineeringOrbit";
-import { projects } from "@/lib/projects";
-
-const featuredSlugs = [
-  "tesla-turbine",
-  "aerodynamic-ml-model",
-  "joule-heating-multiphysics",
-  "autonomous-underwater-vehicle",
-];
-
-const evidence: Record<string, string[]> = {
-  "tesla-turbine": ["12-disk rotor", "2 mm baseline spacing", "CAD + CFD review"],
-  "aerodynamic-ml-model": ["3 Reynolds regimes", "Stall classification", "Lift prediction"],
-  "joule-heating-multiphysics": ["Coupled physics", "Boundary sensitivity", "Physical validation"],
-  "autonomous-underwater-vehicle": ["Mechanical packaging", "Subsystem interfaces", "Team integration"],
-};
 
 export default function Home() {
-  const featured = featuredSlugs.map((slug) => projects.find((project) => project.slug === slug)!);
-
   return (
     <main>
       <section className="hero dark-section portfolio-hero">
@@ -51,40 +33,12 @@ export default function Home() {
               <p>My experience at AZAD Engineering provided valuable exposure to the manufacturing and inspection of precision aerospace components, including multi-axis CNC machining, airfoil geometry inspection, CMM measurement and quality-control processes.</p>
               <p>I’m seeking opportunities to contribute to multidisciplinary technical projects while learning from experienced engineers and researchers. I’m particularly interested in environments where mechanical engineering supports advanced scientific, aerospace, energy, and large-scale technical systems. Beyond formal coursework, I maintain a strong interest in aviation and enjoy expanding my knowledge through hands-on experimentation and independent learning.</p>
               <div className="hero-actions">
-                <Link className="button button-primary" href="#selected-work">Explore my work <span>↓</span></Link>
+                <Link className="button button-primary" href="/projects">Explore my work <span>↗</span></Link>
                 <a className="button button-ghost" href="/Tejas-Natekar-CV.docx" download>Download résumé <span>↓</span></a>
                 <a className="text-link hero-contact" href="mailto:tejasnatekar10@gmail.com">Contact me ↗</a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="section selected-work" id="selected-work">
-        <div className="shell">
-          <div className="section-heading split-heading portfolio-heading">
-            <div><span className="section-kicker">Selected engineering work</span><h2>Four projects. Four different ways of answering a physical question.</h2></div>
-            <p>Each case study identifies the objective, my contribution, the technical approach, the evidence and what I would improve next.</p>
-          </div>
-
-          <div className="portfolio-grid">
-            {featured.map((project, index) => (
-              <Link className={`portfolio-card portfolio-card-${index + 1}`} href={`/projects/${project.slug}`} key={project.slug}>
-                <div className="portfolio-card-visual">
-                  <ProjectVisual type={project.visual} label={project.shortTitle} />
-                  <span className="figure-label">Fig. 0{index + 1} · {project.category}</span>
-                </div>
-                <div className="portfolio-card-copy">
-                  <div className="project-meta"><span>{project.number} · {project.date}</span><span>Case study ↗</span></div>
-                  <h3>{project.title}</h3>
-                  <p>{project.summary}</p>
-                  <ul>{evidence[project.slug].map((item) => <li key={item}>{item}</li>)}</ul>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="archive-link"><span>More numerical, thermal and research work is available in the complete project archive.</span><Link className="button button-outline" href="/projects">View all projects <span>↗</span></Link></div>
         </div>
       </section>
 
