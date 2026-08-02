@@ -133,7 +133,7 @@ export default function Home() {
                     <div className="software-card">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ansys_logo_%282019%29.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/1/14/Ansys_logo_%282019%29.svg"
                           alt=""
                         />
                       </span>
@@ -143,7 +143,7 @@ export default function Home() {
                     <div className="software-card">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/OpenFOAM_logo.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/4/48/OpenFOAM_logo.svg"
                           alt=""
                         />
                       </span>
@@ -153,7 +153,7 @@ export default function Home() {
                     <div className="software-card">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Comsol_logo.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/2/28/Comsol_logo.svg"
                           alt=""
                         />
                       </span>
@@ -176,7 +176,7 @@ export default function Home() {
                     <div className="software-card software-matlab">
                       <span className="software-logo software-logo-symbol" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Matlab_Logo.png"
+                          src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
                           alt=""
                         />
                       </span>
@@ -186,7 +186,7 @@ export default function Home() {
                     <div className="software-card software-python">
                       <span className="software-logo software-logo-symbol" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Python-logo-notext.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                           alt=""
                         />
                       </span>
@@ -196,7 +196,7 @@ export default function Home() {
                     <div className="software-card software-machine-learning">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Scikit_learn_logo_small.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
                           alt=""
                         />
                       </span>
@@ -219,7 +219,7 @@ export default function Home() {
                     <div className="software-card technical-icon-card">
                       <span className="software-logo software-logo-symbol" aria-hidden="true">
                         <img
-                          src="https://api.iconify.design/mdi/robot-industrial.svg?color=%23087f8c"
+                          src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/robot-industrial.svg"
                           alt=""
                         />
                       </span>
@@ -229,7 +229,7 @@ export default function Home() {
                     <div className="software-card technical-icon-card">
                       <span className="software-logo software-logo-symbol" aria-hidden="true">
                         <img
-                          src="https://api.iconify.design/mdi/axis-arrow.svg?color=%23ff6b3d"
+                          src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/axis-arrow.svg"
                           alt=""
                         />
                       </span>
