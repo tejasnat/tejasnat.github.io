@@ -263,7 +263,7 @@ button { font: inherit; }
 .capability-heading { margin-bottom: 54px; }
 .capability-heading h2 { max-width: 900px; }
 .capability-heading > p { max-width: 720px; margin: 22px 0 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
-.capability-system { display: grid; grid-template-columns: .72fr 1.28fr; border: 1px solid var(--line); background: #fbfaf6; box-shadow: 0 28px 70px rgba(22,38,49,.08); }
+.capability-system { display: grid; grid-template-columns: .72fr 1.28fr; align-items: stretch; border: 1px solid var(--line); background: #fbfaf6; box-shadow: 0 28px 70px rgba(22,38,49,.08); }
 .capability-profile { position: relative; min-height: 650px; padding: 34px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; background: var(--ink); color: var(--white); }
 .capability-profile::before { content: ""; position: absolute; inset: 0; opacity: .18; background-image: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(145deg, transparent 8%, black 62%, transparent 100%); }
 .capability-profile::after { content: "04"; position: absolute; right: -12px; bottom: -62px; color: rgba(113,220,225,.08); font: 700 240px/1 var(--font-geist-mono); letter-spacing: -.12em; }
@@ -277,8 +277,8 @@ button { font: inherit; }
 .capability-profile-note { padding-top: 24px; border-top: 1px solid rgba(255,255,255,.18); }
 .capability-profile-note span { color: #83949c; font: 650 8px/1 var(--font-geist-mono); letter-spacing: .14em; text-transform: uppercase; }
 .capability-profile-note p { margin: 12px 0 0; max-width: 420px; color: #d9e1e4; font: 550 11px/1.65 var(--font-geist-mono); }
-.capability-disciplines { display: flex; flex-direction: column; }
-.capability-row { flex: 1; min-height: 162px; display: grid; grid-template-columns: 54px 1.35fr .9fr; gap: 24px; align-items: center; padding: 28px 30px; border-bottom: 1px solid var(--line); transition: background .22s ease, transform .22s ease; }
+.capability-disciplines { display: grid; grid-template-columns: minmax(0, 1fr); min-width: 0; align-content: start; }
+.capability-row { min-height: 162px; display: grid; grid-template-columns: 54px 1.35fr .9fr; gap: 24px; align-items: center; padding: 28px 30px; border-bottom: 1px solid var(--line); transition: background .22s ease, transform .22s ease; }
 .capability-row:last-child { border-bottom: 0; }
 .capability-row:hover { background: #ffffff; transform: translateX(4px); }
 .capability-number { align-self: start; padding-top: 3px; color: var(--orange); font: 650 10px/1 var(--font-geist-mono); }
