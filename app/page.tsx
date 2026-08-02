@@ -80,7 +80,7 @@ export default function Home() {
                     <div className="software-card software-solidworks">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/SOLIDWORKS_Logo.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/b/bf/SOLIDWORKS_Logo.svg"
                           alt=""
                         />
                       </span>
@@ -90,7 +90,7 @@ export default function Home() {
                     <div className="software-card software-inventor">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Autodesk_Inventor_Logo.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/8/81/Autodesk_Inventor_Logo.svg"
                           alt=""
                         />
                       </span>
@@ -100,7 +100,7 @@ export default function Home() {
                     <div className="software-card software-autocad">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Autodesk_AutoCAD_Logo.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/d/db/Autodesk_AutoCAD_Logo.svg"
                           alt=""
                         />
                       </span>
@@ -110,7 +110,7 @@ export default function Home() {
                     <div className="software-card software-fusion">
                       <span className="software-logo" aria-hidden="true">
                         <img
-                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Autodesk_Fusion_Logo.svg"
+                          src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Autodesk_Fusion_Logo.svg"
                           alt=""
                         />
                       </span>
