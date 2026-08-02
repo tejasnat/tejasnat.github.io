@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { EngineeringOrbit } from "@/components/EngineeringOrbit";
 
 export default function Home() {
   return (
@@ -44,14 +43,79 @@ export default function Home() {
 
       <section className="section capability-section">
         <div className="shell">
-          <div className="section-heading split-heading portfolio-heading"><div><span className="section-kicker">Technical capability</span><h2>Skills connected to work—not a list of software logos.</h2></div><p>The strongest evidence for each capability is linked through the projects above.</p></div>
-          <div className="capability-orbit-layout">
-            <div className="skill-orbit-panel"><EngineeringOrbit /><p>I use design, computation and physical reasoning together to understand a system and make better engineering decisions.</p></div>
-            <div className="evidence-grid">
-              <article><span>01 · Design</span><h3>Mechanical systems and assemblies</h3><p>SolidWorks · Inventor · packaging · design for assembly</p></article>
-              <article><span>02 · Simulation</span><h3>CFD, thermal and multiphysics analysis</h3><p>ANSYS · fluid flow · heat transfer · coupled physics</p></article>
-              <article><span>03 · Computation</span><h3>Numerical models and engineering data</h3><p>MATLAB · Python · finite differences · machine learning</p></article>
-              <article><span>04 · Manufacturing</span><h3>Process-aware engineering judgement</h3><p>CNC exposure · metrology · CMM · tolerance awareness</p></article>
+          <div className="section-heading split-heading portfolio-heading">
+            <div>
+              <span className="section-kicker">Technical capability</span>
+              <h2>A connected engineering toolkit for physical systems.</h2>
+            </div>
+            <p>Developed through project work that combines design, simulation, computation and manufacturing awareness.</p>
+          </div>
+
+          <div className="capability-system">
+            <aside className="capability-profile">
+              <div className="capability-profile-top">
+                <span>Engineering profile</span>
+                <strong>ME / 04</strong>
+              </div>
+              <div className="capability-profile-copy">
+                <p className="capability-overline">Design · Analyse · Validate</p>
+                <h3>Mechanical engineering across design and analysis.</h3>
+                <p>I combine physical reasoning with computational tools to define a problem, examine system behaviour and make practical engineering decisions.</p>
+              </div>
+              <div className="capability-profile-note">
+                <span>Working approach</span>
+                <p>Understand the physics → build the model → evaluate the result → improve the design</p>
+              </div>
+            </aside>
+
+            <div className="capability-disciplines">
+              <article className="capability-row">
+                <span className="capability-number">01</span>
+                <div className="capability-row-copy">
+                  <span>Design</span>
+                  <h3>Mechanical systems &amp; assemblies</h3>
+                  <p>Developing parts, assemblies and subsystem layouts with attention to function, packaging and assembly.</p>
+                </div>
+                <div className="capability-tools">
+                  <span>SolidWorks</span><span>Inventor</span><span>CAD assemblies</span><span>Design for assembly</span>
+                </div>
+              </article>
+
+              <article className="capability-row">
+                <span className="capability-number">02</span>
+                <div className="capability-row-copy">
+                  <span>Simulation</span>
+                  <h3>CFD, thermal &amp; multiphysics analysis</h3>
+                  <p>Setting up boundary conditions, interpreting field behaviour and connecting numerical results to physical systems.</p>
+                </div>
+                <div className="capability-tools">
+                  <span>ANSYS</span><span>OpenFOAM</span><span>Fluid flow</span><span>Heat transfer</span>
+                </div>
+              </article>
+
+              <article className="capability-row">
+                <span className="capability-number">03</span>
+                <div className="capability-row-copy">
+                  <span>Computation</span>
+                  <h3>Numerical models &amp; engineering data</h3>
+                  <p>Using computation to model behaviour, analyse data and test engineering assumptions.</p>
+                </div>
+                <div className="capability-tools">
+                  <span>MATLAB</span><span>Python</span><span>Finite differences</span><span>Machine learning</span>
+                </div>
+              </article>
+
+              <article className="capability-row">
+                <span className="capability-number">04</span>
+                <div className="capability-row-copy">
+                  <span>Manufacturing</span>
+                  <h3>Process-aware engineering judgement</h3>
+                  <p>Understanding how machining, inspection and tolerances influence the practicality of a design.</p>
+                </div>
+                <div className="capability-tools">
+                  <span>Multi-axis CNC</span><span>CMM</span><span>Metrology</span><span>Tolerance awareness</span>
+                </div>
+              </article>
             </div>
           </div>
         </div>
