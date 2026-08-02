@@ -556,3 +556,196 @@ button { font: inherit; }
     padding: 12px 10px;
   }
 }
+
+
+/* Shinkansen homepage hero */
+.portfolio-hero {
+  min-height: 0;
+  padding: 84px 0 0;
+  background: #f3f1ea;
+  color: var(--ink);
+}
+
+.portfolio-hero-banner {
+  position: relative;
+  isolation: isolate;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-train-background,
+.hero-banner-shade {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-train-background {
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 61%;
+}
+
+.hero-banner-shade {
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(6, 16, 24, .86) 0%, rgba(7, 20, 29, .70) 43%, rgba(7, 20, 29, .20) 76%, rgba(7, 20, 29, .42) 100%),
+    linear-gradient(0deg, rgba(7, 17, 24, .48), transparent 46%);
+}
+
+.hero-banner-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: 72px;
+  align-items: center;
+  padding: 68px 0;
+}
+
+.portfolio-hero .hero-name-block {
+  max-width: 890px;
+  padding: 0;
+  border: 0;
+  color: #fff;
+}
+
+.portfolio-hero .hero-name-block .eyebrow {
+  color: rgba(255, 255, 255, .82);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .28);
+}
+
+.portfolio-hero .hero-name-block h1 {
+  margin: 22px 0 28px;
+  color: #fff;
+  font-size: clamp(62px, 7.4vw, 104px);
+  line-height: .9;
+  letter-spacing: -.07em;
+  text-shadow: 0 5px 28px rgba(0, 0, 0, .34);
+}
+
+.portfolio-hero .hero-keywords {
+  max-width: 790px;
+}
+
+.portfolio-hero .hero-keywords span {
+  border-color: rgba(255, 255, 255, .35);
+  background: rgba(8, 20, 28, .46);
+  color: rgba(255, 255, 255, .92);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .10);
+  backdrop-filter: blur(7px);
+}
+
+.hero-avatar {
+  width: 250px;
+  aspect-ratio: 1;
+  margin: 0;
+  overflow: hidden;
+  border: 6px solid rgba(255, 255, 255, .86);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, .34), 0 0 0 1px rgba(9, 28, 40, .34);
+}
+
+.hero-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 37%;
+}
+
+.hero-intro-panel {
+  max-width: 960px;
+  padding: 72px 0 88px;
+}
+
+.hero-intro-panel .hero-summary h2 {
+  max-width: 830px;
+}
+
+.hero-intro-panel .hero-summary > p {
+  max-width: 900px;
+}
+
+body:has(.portfolio-hero-banner) .site-header {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, .18);
+  background: rgba(6, 16, 24, .62);
+}
+
+body:has(.portfolio-hero-banner) .brand-mark {
+  border-color: rgba(255, 255, 255, .45);
+}
+
+body:has(.portfolio-hero-banner) .brand-copy small,
+body:has(.portfolio-hero-banner) .desktop-nav > a:not(.nav-cta) {
+  color: rgba(255, 255, 255, .76);
+}
+
+body:has(.portfolio-hero-banner) .desktop-nav > a:hover {
+  color: var(--cyan);
+}
+
+body:has(.portfolio-hero-banner) .nav-cta {
+  border-color: rgba(255, 255, 255, .36);
+}
+
+@media (max-width: 900px) {
+  .hero-banner-content {
+    grid-template-columns: minmax(0, 1fr) 190px;
+    gap: 36px;
+  }
+
+  .hero-avatar {
+    width: 190px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-hero {
+    padding-top: 72px;
+  }
+
+  .portfolio-hero-banner {
+    min-height: 620px;
+  }
+
+  .hero-train-background {
+    object-position: 48% center;
+  }
+
+  .hero-banner-shade {
+    background:
+      linear-gradient(0deg, rgba(6, 16, 24, .88) 0%, rgba(6, 16, 24, .52) 70%, rgba(6, 16, 24, .34) 100%),
+      linear-gradient(90deg, rgba(6, 16, 24, .56), rgba(6, 16, 24, .18));
+  }
+
+  .hero-banner-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    align-content: center;
+    padding: 42px 0 48px;
+  }
+
+  .hero-avatar {
+    order: -1;
+    width: 150px;
+    justify-self: end;
+    border-width: 4px;
+  }
+
+  .portfolio-hero .hero-name-block h1 {
+    margin-top: 18px;
+    font-size: clamp(50px, 15vw, 66px);
+  }
+
+  .portfolio-hero .hero-keywords span {
+    font-size: 8px;
+  }
+
+  .hero-intro-panel {
+    padding: 56px 0 68px;
+  }
+}
