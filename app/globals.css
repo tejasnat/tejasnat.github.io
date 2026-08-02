@@ -344,3 +344,105 @@ button { font: inherit; }
   .case-title-block h1 { font-size: 48px; }.case-outcome { font-size: 18px; }.case-visual-stage .project-visual { min-height: 330px; }.case-stage-notes { grid-template-columns: 1fr; }.case-stage-notes > div { border-right: 0; border-bottom: 1px solid var(--line); }
   .contribution-card { padding: 26px; }.contribution-card > p { font-size: 19px; }.case-workflow article { grid-template-columns: 35px 18px 1fr; gap: 10px; }
 }
+
+/* Mechanical-design software capability */
+.capability-row-design {
+  min-height: 250px;
+  align-items: start;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.capability-row-design .capability-number {
+  padding-top: 4px;
+}
+.capability-design-body {
+  grid-column: 2 / 4;
+  min-width: 0;
+}
+.capability-design-copy h3 {
+  margin-top: 8px;
+  margin-bottom: 7px;
+  font-size: 24px;
+}
+.capability-design-copy p {
+  max-width: none;
+}
+.design-software-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.software-card {
+  min-height: 92px;
+  padding: 14px 12px 12px;
+  border: 1px solid rgba(16,24,32,.14);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.software-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(16,24,32,.28);
+  box-shadow: 0 10px 24px rgba(22,38,49,.08);
+}
+.software-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+}
+.software-icon svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.software-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.software-name {
+  color: var(--ink);
+  font: 650 10px/1.15 var(--font-geist-mono);
+  letter-spacing: .02em;
+}
+.software-solidworks .software-icon { color: #d74334; }
+.software-inventor .software-icon { color: #d88916; }
+.software-autocad .software-icon { color: #cf2f38; }
+.software-fusion .software-icon { color: #e36a22; }
+.software-fusion .software-icon path:last-child { stroke: #177d9b; }
+
+@media (max-width: 900px) {
+  .design-software-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .software-card {
+    min-height: 104px;
+  }
+}
+
+@media (max-width: 640px) {
+  .capability-row-design {
+    grid-template-columns: 36px 1fr;
+    padding-top: 24px;
+  }
+  .capability-design-body {
+    grid-column: 2;
+  }
+  .design-software-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 17px;
+  }
+  .software-card {
+    min-height: 92px;
+    padding: 12px 10px;
+  }
+}
+
