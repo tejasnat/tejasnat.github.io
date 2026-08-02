@@ -78,41 +78,41 @@ export default function Home() {
 
                   <div className="design-software-grid" aria-label="Mechanical design software">
                     <div className="software-card software-solidworks">
-                      <span className="software-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" role="img">
-                          <path d="M9 14h15c7 0 11 3 11 8 0 4-3 7-8 8l10 6H24l-9-6h-4" />
-                          <path d="M11 14l8 8-8 8M30 14l8 8" />
-                        </svg>
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/SOLIDWORKS_Logo.svg"
+                          alt=""
+                        />
                       </span>
                       <span className="software-name">SolidWorks</span>
                     </div>
 
                     <div className="software-card software-inventor">
-                      <span className="software-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" role="img">
-                          <path d="M16 9h16l5 7-9 23H12l8-23-4-7Z" />
-                          <path d="M22 16h10M18 32h11M25 16l-6 16" />
-                        </svg>
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Autodesk_Inventor_Logo.svg"
+                          alt=""
+                        />
                       </span>
                       <span className="software-name">Inventor</span>
                     </div>
 
                     <div className="software-card software-autocad">
-                      <span className="software-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" role="img">
-                          <path d="M24 7 40 39h-9l-3-7H16l-3 7H6L24 7Z" />
-                          <path d="m18 27 6-12 5 12H18Z" />
-                        </svg>
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Autodesk_AutoCAD_Logo.svg"
+                          alt=""
+                        />
                       </span>
                       <span className="software-name">AutoCAD</span>
                     </div>
 
                     <div className="software-card software-fusion">
-                      <span className="software-icon" aria-hidden="true">
-                        <svg viewBox="0 0 48 48" role="img">
-                          <path d="M10 16c7-8 20-9 28-2L25 25H11c-4 0-5-5-1-9Z" />
-                          <path d="M38 32c-7 8-20 9-28 2l13-11h14c4 0 5 5 1 9Z" />
-                        </svg>
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Autodesk_Fusion_Logo.svg"
+                          alt=""
+                        />
                       </span>
                       <span className="software-name">Fusion 360</span>
                     </div>
