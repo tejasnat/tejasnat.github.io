@@ -58,11 +58,6 @@ export default function Home() {
               <div className="capability-profile-copy">
                 <p className="capability-overline">Design · Analyse · Validate</p>
                 <h3>Mechanical engineering across design and analysis.</h3>
-                <p>I combine physical reasoning with computational tools to define a problem, examine system behaviour and make practical engineering decisions.</p>
-              </div>
-              <div className="capability-profile-note">
-                <span>Working approach</span>
-                <p>Understand the physics → build the model → evaluate the result → improve the design</p>
               </div>
             </aside>
 
