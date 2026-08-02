@@ -367,6 +367,12 @@ button { font: inherit; }
 .capability-design-copy p {
   max-width: none;
 }
+.capability-design-copy > span {
+  color: #087f8c;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: .12em;
+}
 .design-software-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -389,34 +395,20 @@ button { font: inherit; }
   border-color: rgba(16,24,32,.28);
   box-shadow: 0 10px 24px rgba(22,38,49,.08);
 }
-.software-icon {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
+.software-logo {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.software-icon svg {
+.software-logo img {
+  display: block;
   width: 100%;
   height: 100%;
-  overflow: visible;
+  object-fit: contain;
+  object-position: left center;
 }
-.software-icon path {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.software-name {
-  color: var(--ink);
-  font: 650 10px/1.15 var(--font-geist-mono);
-  letter-spacing: .02em;
-}
-.software-solidworks .software-icon { color: #d74334; }
-.software-inventor .software-icon { color: #d88916; }
-.software-autocad .software-icon { color: #cf2f38; }
-.software-fusion .software-icon { color: #e36a22; }
-.software-fusion .software-icon path:last-child { stroke: #177d9b; }
 
 @media (max-width: 900px) {
   .design-software-grid {
