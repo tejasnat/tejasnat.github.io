@@ -43,11 +43,9 @@ export default function Home() {
 
       <section className="section capability-section">
         <div className="shell">
-          <div className="section-heading split-heading portfolio-heading">
-            <div>
-              <span className="section-kicker">Technical capability</span>
-              <h2>Engineering Capabilities in Design, Simulation and Analysis</h2>
-            </div>
+          <div className="section-heading portfolio-heading capability-heading">
+            <span className="section-kicker">Technical capability</span>
+            <h2>Engineering Capabilities in Design, Simulation and Analysis</h2>
             <p>Developed through project work that combines design, simulation, computation and manufacturing awareness.</p>
           </div>
 
