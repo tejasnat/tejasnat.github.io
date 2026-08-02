@@ -438,3 +438,121 @@ button { font: inherit; }
   }
 }
 
+
+
+/* Expanded simulation, computation and manufacturing capabilities */
+.capability-row-expanded {
+  min-height: 232px;
+  align-items: start;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.capability-row-expanded .capability-number {
+  padding-top: 4px;
+}
+
+.capability-detail-body {
+  grid-column: 2 / 4;
+  min-width: 0;
+}
+
+.capability-expanded-copy h3 {
+  margin-top: 8px;
+  margin-bottom: 7px;
+  font-size: 24px;
+}
+
+.capability-expanded-copy p {
+  max-width: 660px;
+}
+
+.capability-expanded-copy > span {
+  color: #087f8c;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: .12em;
+}
+
+.capability-tool-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.capability-tool-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.capability-tool-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 520px;
+}
+
+.capability-tool-grid .software-card {
+  min-height: 98px;
+}
+
+.software-name {
+  color: #31434d;
+  font: 650 9px/1.25 var(--font-geist-mono);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.software-logo-symbol img {
+  width: auto;
+  max-width: 64px;
+  object-position: left center;
+}
+
+.software-matlab .software-logo-symbol img {
+  max-width: 62px;
+}
+
+.software-python .software-logo-symbol img {
+  max-width: 52px;
+}
+
+.software-machine-learning .software-logo img {
+  max-width: 112px;
+}
+
+.technical-icon-card .software-logo-symbol img {
+  max-width: 52px;
+}
+
+@media (max-width: 900px) {
+  .capability-tool-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .capability-tool-grid .software-card {
+    min-height: 104px;
+  }
+}
+
+@media (max-width: 640px) {
+  .capability-row-expanded {
+    grid-template-columns: 36px 1fr;
+    min-height: 0;
+    padding-top: 24px;
+  }
+
+  .capability-detail-body {
+    grid-column: 2;
+  }
+
+  .capability-tool-grid-three,
+  .capability-tool-grid-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: none;
+    gap: 8px;
+    margin-top: 17px;
+  }
+
+  .capability-tool-grid .software-card {
+    min-height: 92px;
+    padding: 12px 10px;
+  }
+}
