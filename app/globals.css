@@ -260,6 +260,9 @@ button { font: inherit; }
 .method-steps p { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
 .professional-experience { background: #fbfaf6; }
 .capability-section { background: #f2f0e9; }
+.capability-heading { margin-bottom: 54px; }
+.capability-heading h2 { max-width: 900px; }
+.capability-heading > p { max-width: 720px; margin: 22px 0 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
 .capability-system { display: grid; grid-template-columns: .72fr 1.28fr; border: 1px solid var(--line); background: #fbfaf6; box-shadow: 0 28px 70px rgba(22,38,49,.08); }
 .capability-profile { position: relative; min-height: 650px; padding: 34px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; background: var(--ink); color: var(--white); }
 .capability-profile::before { content: ""; position: absolute; inset: 0; opacity: .18; background-image: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(145deg, transparent 8%, black 62%, transparent 100%); }
