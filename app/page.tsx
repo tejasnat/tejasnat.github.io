@@ -46,7 +46,7 @@ export default function Home() {
           <div className="section-heading split-heading portfolio-heading">
             <div>
               <span className="section-kicker">Technical capability</span>
-              <h2>An integrated engineering toolkit for the design, simulation, and analysis of physical systems.</h2>
+              <h2>Engineering Capabilities in Design, Simulation and Analysis</h2>
             </div>
             <p>Developed through project work that combines design, simulation, computation and manufacturing awareness.</p>
           </div>
