@@ -4,26 +4,30 @@ export default function Home() {
   return (
     <main>
       <section className="hero dark-section portfolio-hero">
-        <div className="hero-grid-overlay" />
-        <div className="shell personal-hero">
-          <div className="hero-name-block">
-            <span className="eyebrow"><i /> Mechanical engineering portfolio</span>
-            <h1>Tejas Natekar</h1>
-            <div className="hero-keywords" aria-label="Areas of interest">
-              <span>Mechanical Design</span>
-              <span>CFD &amp; Numerical Modelling</span>
-              <span>Thermal-Fluid Systems</span>
-              <span>Multiphysics</span>
-              <span>Aerospace &amp; Scientific Engineering</span>
+        <div className="portfolio-hero-banner">
+          <img className="hero-train-background" src="/shinkansen-hero.svg" alt="" aria-hidden="true" />
+          <div className="hero-banner-shade" />
+          <div className="shell hero-banner-content">
+            <div className="hero-name-block">
+              <span className="eyebrow"><i /> Mechanical engineering portfolio</span>
+              <h1>Tejas Natekar</h1>
+              <div className="hero-keywords" aria-label="Areas of interest">
+                <span>Mechanical Design</span>
+                <span>CFD &amp; Numerical Modelling</span>
+                <span>Thermal-Fluid Systems</span>
+                <span>Multiphysics</span>
+                <span>Aerospace &amp; Scientific Engineering</span>
+              </div>
             </div>
-          </div>
 
-          <div className="hero-profile-grid">
-            <figure className="hero-portrait">
-              <img src="/tejas-natekar-portrait.jpg" alt="Tejas Natekar at NCSPER 2025" />
-              <figcaption><span>Tejas Natekar</span><strong>Mechanical Engineering · 2027</strong></figcaption>
+            <figure className="hero-avatar">
+              <img src="/tejas-natekar-portrait.jpg" alt="Tejas Natekar" />
             </figure>
+          </div>
+        </div>
 
+        <div className="shell personal-hero">
+          <div className="hero-intro-panel">
             <div className="hero-summary">
               <span className="section-kicker">About me</span>
               <h2>Hi, I’m Tejas—a mechanical engineering student who enjoys understanding, designing and improving physical systems.</h2>
