@@ -42,20 +42,6 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section className="section experience-preview professional-experience">
-        <div className="shell experience-card">
-          <div className="experience-marker"><span>INDUSTRIAL<br />EXPOSURE</span><strong>AZAD</strong><small>HYDERABAD · 2025</small></div>
-          <div className="experience-copy">
-            <span className="section-kicker">Precision aerospace manufacturing</span>
-            <h2>Seeing how complex airfoil geometry becomes a repeatable component.</h2>
-            <p>I followed the manufacturing and quality chain behind precision aerospace components—from multi-axis machining and tooling to CMM inspection, tolerance verification and process control.</p>
-            <Link className="text-link dark-link" href="/experience">View industrial experience ↗</Link>
-          </div>
-          <div className="experience-tags"><span>5-axis machining</span><span>Airfoil geometry</span><span>CMM inspection</span><span>Quality systems</span></div>
-        </div>
-      </section>
-
       <section className="section capability-section">
         <div className="shell">
           <div className="section-heading split-heading portfolio-heading"><div><span className="section-kicker">Technical capability</span><h2>Skills connected to work—not a list of software logos.</h2></div><p>The strongest evidence for each capability is linked through the projects above.</p></div>
