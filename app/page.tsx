@@ -42,21 +42,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section method-section">
-        <div className="shell method-layout">
-          <div className="method-intro">
-            <span className="section-kicker">How I work</span>
-            <h2>Define the physics. Question the result. Improve the design.</h2>
-            <p>Across CAD, CFD, finite differences and machine learning, I try to work methodically and make my assumptions, checks and limitations clear.</p>
-          </div>
-          <ol className="method-steps">
-            <li><span>01</span><div><strong>Frame</strong><p>Define the system, objective, constraints and measurable outputs.</p></div></li>
-            <li><span>02</span><div><strong>Model</strong><p>Translate the physics into geometry, equations and traceable assumptions.</p></div></li>
-            <li><span>03</span><div><strong>Interrogate</strong><p>Check sensitivity, numerical behaviour and physical consistency.</p></div></li>
-            <li><span>04</span><div><strong>Iterate</strong><p>Carry limitations and evidence into the next design decision.</p></div></li>
-          </ol>
-        </div>
-      </section>
 
       <section className="section experience-preview professional-experience">
         <div className="shell experience-card">
