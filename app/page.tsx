@@ -120,39 +120,122 @@ export default function Home() {
                 </div>
               </article>
 
-              <article className="capability-row">
+              <article className="capability-row capability-row-expanded">
                 <span className="capability-number">02</span>
-                <div className="capability-row-copy">
-                  <span>Simulation</span>
-                  <h3>CFD, thermal &amp; multiphysics analysis</h3>
-                  <p>Setting up boundary conditions, interpreting field behaviour and connecting numerical results to physical systems.</p>
-                </div>
-                <div className="capability-tools">
-                  <span>ANSYS</span><span>OpenFOAM</span><span>Fluid flow</span><span>Heat transfer</span>
+                <div className="capability-detail-body">
+                  <div className="capability-row-copy capability-expanded-copy">
+                    <span>Simulation</span>
+                    <h3>CFD, Thermal &amp; Multiphysics Analysis</h3>
+                    <p>Defining boundary conditions, solving fluid, thermal and coupled-physics problems, and interpreting field behaviour.</p>
+                  </div>
+
+                  <div className="capability-tool-grid capability-tool-grid-three" aria-label="Engineering simulation software">
+                    <div className="software-card">
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ansys_logo_%282019%29.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">ANSYS</span>
+                    </div>
+
+                    <div className="software-card">
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/OpenFOAM_logo.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">OpenFOAM</span>
+                    </div>
+
+                    <div className="software-card">
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Comsol_logo.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">COMSOL Multiphysics</span>
+                    </div>
+                  </div>
                 </div>
               </article>
 
-              <article className="capability-row">
+              <article className="capability-row capability-row-expanded">
                 <span className="capability-number">03</span>
-                <div className="capability-row-copy">
-                  <span>Computation</span>
-                  <h3>Numerical models &amp; engineering data</h3>
-                  <p>Using computation to model behaviour, analyse data and test engineering assumptions.</p>
-                </div>
-                <div className="capability-tools">
-                  <span>MATLAB</span><span>Python</span><span>Finite differences</span><span>Machine learning</span>
+                <div className="capability-detail-body">
+                  <div className="capability-row-copy capability-expanded-copy">
+                    <span>Computation</span>
+                    <h3>Numerical Modelling &amp; Engineering Data</h3>
+                    <p>Developing numerical models, analysing engineering data and applying machine-learning methods to physical systems.</p>
+                  </div>
+
+                  <div className="capability-tool-grid capability-tool-grid-three" aria-label="Computational engineering tools">
+                    <div className="software-card software-matlab">
+                      <span className="software-logo software-logo-symbol" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Matlab_Logo.png"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">MATLAB</span>
+                    </div>
+
+                    <div className="software-card software-python">
+                      <span className="software-logo software-logo-symbol" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Python-logo-notext.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">Python</span>
+                    </div>
+
+                    <div className="software-card software-machine-learning">
+                      <span className="software-logo" aria-hidden="true">
+                        <img
+                          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Scikit_learn_logo_small.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">Machine Learning</span>
+                    </div>
+                  </div>
                 </div>
               </article>
 
-              <article className="capability-row">
+              <article className="capability-row capability-row-expanded capability-row-manufacturing">
                 <span className="capability-number">04</span>
-                <div className="capability-row-copy">
-                  <span>Manufacturing</span>
-                  <h3>Process-aware engineering judgement</h3>
-                  <p>Understanding how machining, inspection and tolerances influence the practicality of a design.</p>
-                </div>
-                <div className="capability-tools">
-                  <span>Multi-axis CNC</span><span>CMM</span><span>Metrology</span><span>Tolerance awareness</span>
+                <div className="capability-detail-body">
+                  <div className="capability-row-copy capability-expanded-copy">
+                    <span>Manufacturing &amp; Metrology</span>
+                    <h3>Precision Manufacturing &amp; Inspection</h3>
+                    <p>Understanding how machining, dimensional inspection and quality control influence component accuracy and design practicality.</p>
+                  </div>
+
+                  <div className="capability-tool-grid capability-tool-grid-two" aria-label="Manufacturing and inspection capabilities">
+                    <div className="software-card technical-icon-card">
+                      <span className="software-logo software-logo-symbol" aria-hidden="true">
+                        <img
+                          src="https://api.iconify.design/mdi/robot-industrial.svg?color=%23087f8c"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">Multi-axis CNC</span>
+                    </div>
+
+                    <div className="software-card technical-icon-card">
+                      <span className="software-logo software-logo-symbol" aria-hidden="true">
+                        <img
+                          src="https://api.iconify.design/mdi/axis-arrow.svg?color=%23ff6b3d"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">CMM Inspection</span>
+                    </div>
+                  </div>
                 </div>
               </article>
             </div>
