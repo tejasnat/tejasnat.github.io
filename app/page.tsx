@@ -211,19 +211,39 @@ export default function Home() {
                 <div className="capability-detail-body">
                   <div className="capability-row-copy capability-expanded-copy">
                     <span>Manufacturing &amp; Metrology</span>
-                    <h3>Precision Manufacturing &amp; Inspection</h3>
-                    <p>Understanding how machining, dimensional inspection and quality control influence component accuracy and design practicality.</p>
+                    <h3>CNC Programming, Manufacturing Processes &amp; Inspection</h3>
+                    <p>Working knowledge of CNC programming fundamentals, including G- and M-codes, machining operations and process planning, along with an understanding of manufacturing methods and dimensional inspection using CMM.</p>
                   </div>
 
-                  <div className="capability-tool-grid capability-tool-grid-two" aria-label="Manufacturing and inspection capabilities">
+                  <div className="design-software-grid" aria-label="Manufacturing and inspection capabilities">
                     <div className="software-card technical-icon-card">
                       <span className="software-logo software-logo-symbol" aria-hidden="true">
                         <img
-                          src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/robot-industrial.svg"
+                          src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/code-braces.svg"
                           alt=""
                         />
                       </span>
-                      <span className="software-name">Multi-axis CNC</span>
+                      <span className="software-name">CNC Programming</span>
+                    </div>
+
+                    <div className="software-card technical-icon-card">
+                      <span className="software-logo software-logo-symbol" aria-hidden="true">
+                        <img
+                          src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/factory.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">Manufacturing Processes</span>
+                    </div>
+
+                    <div className="software-card technical-icon-card">
+                      <span className="software-logo software-logo-symbol" aria-hidden="true">
+                        <img
+                          src="https://cdn.jsdelivr.net/npm/@mdi/svg@7.4.47/svg/clipboard-text-outline.svg"
+                          alt=""
+                        />
+                      </span>
+                      <span className="software-name">Process Planning</span>
                     </div>
 
                     <div className="software-card technical-icon-card">
