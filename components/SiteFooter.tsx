@@ -5,8 +5,8 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
-          <span className="section-kicker light">Open to engineering opportunities</span>
-          <h2>Let’s build something that has to work in the real world.</h2>
+          <span className="section-kicker light">Seeking Opportunities to Apply and Grow</span>
+          <h2>Ready to contribute my skills in design, simulation and computational engineering.</h2>
         </div>
         <div className="footer-actions">
           <a href="mailto:tejasnatekar10@gmail.com">Email me <span>↗</span></a>
