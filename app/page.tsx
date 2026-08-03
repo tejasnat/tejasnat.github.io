@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <section className="hero dark-section portfolio-hero">
         <div className="portfolio-hero-banner">
-          <img className="hero-train-background" src="/shinkansen-station.png" alt="" aria-hidden="true" />
+          <img className="hero-train-background" src="/shinkansen-station.webp" alt="" aria-hidden="true" />
           <div className="hero-banner-shade" />
           <div className="shell hero-banner-content">
             <div className="hero-name-block">
