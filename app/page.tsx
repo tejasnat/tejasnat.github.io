@@ -37,7 +37,7 @@ export default function Home() {
               <p>I’m seeking opportunities to contribute to multidisciplinary technical projects while learning from experienced engineers and researchers. I’m particularly interested in environments where mechanical engineering supports advanced scientific, aerospace, energy, and large-scale technical systems. Beyond formal coursework, I maintain a strong interest in aviation and enjoy expanding my knowledge through hands-on experimentation and independent learning.</p>
               <div className="hero-actions">
                 <Link className="button button-primary" href="/projects">Explore my work <span>↗</span></Link>
-                <a className="button button-ghost" href="/Tejas-Natekar-CV.pdf" target="_blank" rel="noopener noreferrer">View Résumé <span>↗</span></a>
+                <Link className="button button-ghost" href="/resume">View Résumé <span>↗</span></Link>
                 <a className="text-link hero-contact" href="mailto:tejasnatekar10@gmail.com">Contact me ↗</a>
               </div>
             </div>
